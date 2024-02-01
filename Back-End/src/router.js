@@ -1,7 +1,8 @@
 const express = require('express')
+const cadastroControllers = require('./controllers/cadastroControllers')
 
 const router = express.Router()
 
-router.get('/', (request, response) => response.status(200).send('Deu certo!!!') )
+router.get('/cadastro', cadastroControllers.getAll)
 
 module.exports = router
