@@ -1,0 +1,5 @@
+<div *ngIf="canShow">Renderização condicional </div>
+<div *ngIf="name === 'Felipe'; else nameNotFound">Nome Felipe </div>
+<ng-template #nameNotFound>
+  <p>Nome não encontrado</p>
+</ng-template>
