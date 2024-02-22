@@ -1,7 +1,7 @@
 <h2>Lista de animais:</h2>
 <ul>
   <li *ngFor="let animal of animals">
-    Nome: {{animal.name}}, Tipo: {{animal.type}}
+    Nome: <a routerLink="/list/{{animal.id}}">{{animal.name}}</a>, Tipo: {{animal.type}}
     <button (click)="removeAnimal(animal)">Remover</button>
   </li>
 </ul>
