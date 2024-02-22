@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { FistComponentComponent } from './components/fist-component/fist-component.component';
@@ -16,7 +17,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 
 @NgModule({
   declarations: [AppComponent, FistComponentComponent, ParentDataComponent, DirectivesComponent, IfRenderComponent, EventosComponent, EmitterComponent, ChangeNumberComponent, ListRenderComponent, PipesComponent, TwoWayBindingComponent],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
