@@ -1,0 +1,14 @@
+{
+  "animals": [
+    { "id": 1, "name": "Leão", "type": "Mamífero", "age": 5 },
+    { "id": 2, "name": "Tigre", "type": "Mamífero", "age": 4 },
+    { "id": 3, "name": "Águia", "type": "Ave", "age": 3 },
+    { "id": 4, "name": "Cobra", "type": "Réptil", "age": 2 },
+    { "id": 5, "name": "Gorila", "type": "Mamífero", "age": 8 },
+    { "id": 6, "name": "Pinguim", "type": "Ave", "age": 1 },
+    { "id": 7, "name": "Jacaré", "type": "Réptil", "age": 6 },
+    { "id": 8, "name": "Elefante", "type": "Mamífero", "age": 10 },
+    { "id": 9, "name": "Coruja", "type": "Ave", "age": 2 },
+    { "id": 10, "name": "Tartaruga", "type": "Réptil", "age": 15 }
+  ]
+}
