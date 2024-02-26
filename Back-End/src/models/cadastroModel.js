@@ -19,9 +19,16 @@ const deleteCadastro = async (id) => {
   const removedCadastro = await connection.execute('DELETE FROM cadastro WHERE id = ?', [id])
   return removedCadastro
 }
+
+const updateCadastro = async (id, cadastro) => {
+  const { nome, status } = cadastro
+  const updatedCadastro = await connection.execute('UPDATE cadastro SET nome = ?, status = ? WHERE id = ?', [nome, status, id])
+  return updatedCadastro
+}
  
 module.exports ={
   getAll,
   createCadastro,
-  deleteCadastro
+  deleteCadastro,
+  updateCadastro
 }

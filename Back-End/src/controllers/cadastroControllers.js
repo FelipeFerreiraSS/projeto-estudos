@@ -1,3 +1,4 @@
+const { request, response } = require('../app')
 const cadastroModel = require('../models/cadastroModel')
 
 const getAll = async (request, response) => {
@@ -20,8 +21,18 @@ const deleteCadastro =  async (request, response) => {
   return response.status(204).json()
 }
 
+const updateCadastro = async (request, response) => {
+  const { id } = request.params
+
+  await cadastroModel.updateCadastro(id, request.body)
+
+  return response.status(204).json()
+}
+
+
 module.exports = {
   getAll,
   createCadastro,
-  deleteCadastro
+  deleteCadastro,
+  updateCadastro
 }
