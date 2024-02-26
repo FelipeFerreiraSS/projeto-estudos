@@ -1,0 +1,20 @@
+* {
+  background-color: #141414;
+  color: white;
+}
+
+body {
+  width: 700px;
+  margin: auto;
+}
+
+a {
+  color: rgb(45, 45, 208);
+}
+
+button {
+  padding: 5px;
+  background-color: white;
+  color: #141414;
+  cursor: pointer;
+}
