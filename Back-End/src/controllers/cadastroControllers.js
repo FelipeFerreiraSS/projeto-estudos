@@ -12,7 +12,16 @@ const createCadastro = async (request, response) => {
   return response.status(201).json(createdCadastro)
 }
 
+const deleteCadastro =  async (request, response) => {
+  const { id } = request.params
+
+  await cadastroModel.deleteCadastro(id)
+
+  return response.status(204).json()
+}
+
 module.exports = {
   getAll,
-  createCadastro
+  createCadastro,
+  deleteCadastro
 }

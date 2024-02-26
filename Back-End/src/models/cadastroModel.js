@@ -15,7 +15,13 @@ const createCadastro = async (cadastro) => {
   return {insertId: createdCadastro.insertId}
 }
 
+const deleteCadastro = async (id) => {
+  const removedCadastro = await connection.execute('DELETE FROM cadastro WHERE id = ?', [id])
+  return removedCadastro
+}
+ 
 module.exports ={
   getAll,
-  createCadastro
+  createCadastro,
+  deleteCadastro
 }
