@@ -16,9 +16,10 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { DadosApiComponent } from './components/dados-api/dados-api.component';
 
 @NgModule({
-  declarations: [AppComponent, FistComponentComponent, ParentDataComponent, DirectivesComponent, IfRenderComponent, EventosComponent, EmitterComponent, ChangeNumberComponent, ListRenderComponent, PipesComponent, TwoWayBindingComponent, ItemDetailComponent],
+  declarations: [AppComponent, FistComponentComponent, ParentDataComponent, DirectivesComponent, IfRenderComponent, EventosComponent, EmitterComponent, ChangeNumberComponent, ListRenderComponent, PipesComponent, TwoWayBindingComponent, ItemDetailComponent, DadosApiComponent],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
